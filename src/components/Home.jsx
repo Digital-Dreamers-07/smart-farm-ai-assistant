@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 const Home = () => {
   return (
 
-    <div className="relative">
+    <div className="relative background-pic">
         <div className="absolute inset-0 bg-gradient-to-r from-green-900/70 to-green-700/70 z-10" />
-        <div className="h-[500px] bg-cover bg-center" style={{ background: "url('../assets/field.mp4')" }} />
+        <div className="h-[500px] bg-cover bg-center" style={{ background: "url('.feild.jpg')" }} />
         <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-white p-4">
           <h1 className="text-5xl md:text-6xl font-bold text-center mb-4">Smart Farming Solutions</h1>
           <p className="text-xl md:text-2xl text-center max-w-3xl mb-8">
