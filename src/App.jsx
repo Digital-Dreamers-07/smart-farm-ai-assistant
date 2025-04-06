@@ -68,7 +68,7 @@ const MainContent = () => {
       {/* ✅ Only show these on Home page */}
       {isHomePage && (
         <>
-          <div className="bg-[#f9fafb] text-black py-10 px-4">
+          <div className="bg-[#f9fafb] text-black py-10 px-4 ">
             <Feature />
           </div>
           <div className="bg-[#f9fafb] text-black py-10 px-4">
@@ -79,18 +79,6 @@ const MainContent = () => {
           </div>
 
           <div>
-            {/* <button
-              onClick={toggleFarmBot}
-              style={{
-                borderRadius: "1rem", // same as rounded-2xl // Tailwind green-800
-                padding: "0.75rem 1.5rem", // similar to p-3
-                fontSize: "14px"
-              }}
-              className="fixed bg-green-600 bottom-20 right-6 z-50 text-white shadow-lg transition duration-300 flex items-center gap-2 hover:bg-green-700"
-            >
-              🤖 Chat with FarmBot
-            </button> */}
-
 
             {showFarmBot && (
               <div className="fixed bottom-32 right-6 z-50 w-[500px] sm:w-[400px] h-[500px] bg-white text-black rounded-2xl shadow-xl overflow-hidden">

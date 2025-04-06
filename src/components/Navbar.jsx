@@ -15,12 +15,12 @@ const Navbar = () => {
 
   const navLinks = [
     // Removed Home 👇
-    { to: "/crop", label: "🌾 Crop" },
-    { to: "/weather", label: "🌦️ Weather" },
-    { to: "/marketprice", label: "💰 Market Price" },
-    { to: "/cropstogrow", label: "🌿 Crops to Grow" },
-    { to: "/cropsdisease", label: "🦠 Disease Predictor" },
-    { to: "/farmbot", label: "🤖 Chat with FarmBot" },
+    { to: "/crop", label: "Crop" },
+    { to: "/weather", label: "Weather" },
+    { to: "/marketprice", label: "Market Price" },
+    { to: "/cropstogrow", label: "Crops to Grow" },
+    { to: "/cropsdisease", label: "Disease Predictor" },
+    { to: "/farmbot", label: "Chat with FarmBot" },
   ];
 
   return (
@@ -30,8 +30,8 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           {/* 🔗 Logo with Link to home */}
         <Link to="/" style={{ textDecoration: "none" }} className="flex items-center gap-2">
-          <img src={Logo}  alt="Smart Farming Logo" className="h-10 w-10 object-contain" />
-          <span className="text-xl font-semibold text-green-700">Smart Farming</span>
+          <img src={Logo}  alt="Smart Farming Logo" className="h-12 w-12 object-contain" />
+          <span className="text-xl font-bold text-green-700">Smart Farming</span>
         </Link>
         </div>
 
@@ -42,7 +42,7 @@ const Navbar = () => {
               key={link.to}
               to={link.to}
               style={{ textDecoration: "none" }}
-              className={`text-base font-light text-black hover:text-green-600 transition ${
+              className={`text-base font-medium text-black hover:text-green-600 transition ${
                 location.pathname === link.to ? "text-green-700 font-normal" : ""
               }`}
             >
@@ -69,7 +69,7 @@ const Navbar = () => {
                 to={link.to}
                 onClick={() => setMenuOpen(false)}
                 style={{ textDecoration: "none" }}
-                className={`text-lg font-light text-black hover:text-green-600 transition ${
+                className={`text-lg font-medium  text-black hover:text-green-600 transition ${
                   location.pathname === link.to ? "text-green-700 font-normal" : ""
                 }`}
               >

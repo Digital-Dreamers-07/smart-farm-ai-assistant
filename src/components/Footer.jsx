@@ -97,27 +97,27 @@ import {
             <ul className="space-y-2 text-sm pl-0 ml-0">
               <li>
                 <span style={{ textDecoration: "none", color: "white" }} className="hover:text-green-300 cursor-pointer">
-                  Farming Guides
+                 <a href="https://www.agrifarming.in/types-of-farming-in-india-a-full-guide" className="text-white" style={{textDecoration:"none"}}>Farming Guides</a> 
                 </span>
               </li>
               <li>
                 <span style={{ textDecoration: "none", color: "white" }} className="hover:text-green-300 cursor-pointer">
-                  Crop Calendar
+                <a href="https://cropcalendar.apps.fao.org/#/home" className="text-white" style={{textDecoration:"none"}}> Crop Calendar</a>
                 </span>
               </li>
               <li>
                 <span style={{ textDecoration: "none", color: "white" }} className="hover:text-green-300 cursor-pointer">
-                  Pest Control
+                <a href="https://www.rentokil-pestcontrolindia.com/" className="text-white" style={{textDecoration:"none"}}>Pest Control</a>
                 </span>
               </li>
               <li>
                 <span style={{ textDecoration: "none", color: "white" }} className="hover:text-green-300 cursor-pointer">
-                  Irrigation Tips
+               <a href="https://www.nicheagriculture.com/various-types-of-irrigation-techniques-used-in-india/" className="text-white" style={{textDecoration:"none"}}>Irrigation Tips</a>
                 </span>
               </li>
               <li>
                 <span style={{ textDecoration: "none", color: "white" }} className="hover:text-green-300 cursor-pointer">
-                  Sustainable Farming
+                <a href="https://www.britannica.com/technology/sustainable-agriculture" className="text-white" style={{textDecoration:"none"}}>Sustainable Farming</a>
                 </span>
               </li>
             </ul>

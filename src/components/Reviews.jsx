@@ -23,7 +23,7 @@ const reviews = [
     return (
       <section className="py-16 bg-green-50">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-12" style={{color:"#166534",fontSize:"34px"}}>
             Trusted by Farmers Across India
           </h2>
   
@@ -33,10 +33,10 @@ const reviews = [
                 key={idx}
                 className="bg-white shadow-md rounded-2xl p-6 text-left border border-green-100 hover:shadow-lg transition"
               >
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-3">
                   <div className="h-10 w-10 rounded-full bg-green-200"></div>
                   <div>
-                    <p className="font-semibold text-sm text-gray-900">{review.name}</p>
+                    <p className="font-semibold text-sm text-gray-900" style={{marginBottom:"0.6rem"}}>{review.name}</p>
                     <p className="text-xs text-gray-500">{review.role}</p>
                   </div>
                 </div>

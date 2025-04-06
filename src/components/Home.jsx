@@ -3,43 +3,33 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div
-      className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden"
-      style={{
-        background: "radial-gradient(circle at top left, #14532d, #064e3b)",
-      }}
-    >
-      {/* 🔲 Grid pattern overlay */}
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 z-0" />
 
-      {/* 💠 Glass card content */}
-      <div className="text-center text-white z-10 backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-10 shadow-xl max-w-3xl w-full">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Smart Farming Solutions
-        </h1>
-        <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
-          Empowering farmers with AI-driven insights for better crop management and higher yields
-        </p>
-        <div className="flex flex-col md:flex-row justify-center gap-4">
-          <Link to="/crop" className="w-full md:w-52">
-            <button
-              className="w-full bg-green-500 hover:bg-green-600 text-white py-3 text-lg font-semibold transition"
-              style={{ borderRadius: "12px" }}
+    <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-green-900/70 to-green-700/70 z-10" />
+        <div className="h-[500px] bg-cover bg-center" style={{ background: "url('../assets/field.mp4')" }} />
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-white p-4">
+          <h1 className="text-5xl md:text-6xl font-bold text-center mb-4">Smart Farming Solutions</h1>
+          <p className="text-xl md:text-2xl text-center max-w-3xl mb-8">
+            Empowering farmers with AI-driven insights for better crop management and higher yields
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              href="/recommendations"
+              style={{ textDecoration: "none" }}
+              className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Get Started
-            </button>
-          </Link>
-          <Link to="/marketprice" className="w-full md:w-52">
-            <button
-              className="w-full bg-white text-green-800 py-3 text-lg font-semibold border border-green-600 hover:bg-green-100 transition"
-              style={{ borderRadius: "12px" }}
+            </Link>
+            <Link
+              href="/market-prices"
+              style={{ textDecoration: "none",color:"#166534" }}
+              className="bg-white hover:bg-gray-100 text-green-800 px-6 py-3 rounded-lg font-medium transition-colors"
             >
               View Market Prices
-            </button>
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 
